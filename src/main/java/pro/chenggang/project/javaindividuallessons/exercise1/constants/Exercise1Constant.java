@@ -6,4 +6,5 @@ package pro.chenggang.project.javaindividuallessons.exercise1.constants;
  */
 public class Exercise1Constant {
     public static final String DEFAULT_GROUP_NAME = "默认";
+
 }

@@ -8,6 +8,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import pro.chenggang.project.javaindividuallessons.ExerciseExecutor;
 import pro.chenggang.project.javaindividuallessons.exercise1.calculation.TransferCalculation;
+import pro.chenggang.project.javaindividuallessons.exercise1.calculation.impl.TransferCalculationAnswer;
 import pro.chenggang.project.javaindividuallessons.exercise1.content.QueryInfo;
 import pro.chenggang.project.javaindividuallessons.exercise1.content.QueryInfoMetaData;
 
@@ -37,5 +38,9 @@ public class Exercise1Executor implements ExerciseExecutor {
         List<QueryInfo> queryInfoList = JSON.parseArray(dataJson, QueryInfo.class);
         Map<String, Map<String, List<QueryInfoMetaData>>> transferResult = transferCalculation.transfer(queryInfoList);
         System.out.println(JSON.toJSONString(transferResult, SerializerFeature.PrettyFormat));
+    }
+
+    public static void main(String[] args) throws Exception {
+        new Exercise1Executor(new TransferCalculationAnswer()).execute();
     }
 }
