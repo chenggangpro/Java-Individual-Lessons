@@ -1,9 +1,10 @@
 package pro.chenggang.project.javaindividuallessons.exercise1.calculation;
 
 import pro.chenggang.project.javaindividuallessons.exercise1.content.QueryInfo;
-import pro.chenggang.project.javaindividuallessons.exercise1.content.QueryOperatorMetaData;
+import pro.chenggang.project.javaindividuallessons.exercise1.content.QueryInfoMetaData;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author: chenggang
@@ -32,8 +33,11 @@ public interface TransferCalculation {
      *
      * GroupName不存在时，使用  "默认"  字符串
      *
+     * functionType 为1 时，表示  查询功能
+     * functionType 为2 时，表示  分组功能
+     *
      * @param queryInfoList
      * @return
      */
-    List<QueryOperatorMetaData> transfer(List<QueryInfo> queryInfoList);
+    Map<String,Map<String,List<QueryInfoMetaData>>> transfer(List<QueryInfo> queryInfoList);
 }

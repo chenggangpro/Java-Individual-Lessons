@@ -3,10 +3,11 @@ package pro.chenggang.project.javaindividuallessons.exercise1.calculation.impl;
 import lombok.extern.slf4j.Slf4j;
 import pro.chenggang.project.javaindividuallessons.exercise1.calculation.TransferCalculation;
 import pro.chenggang.project.javaindividuallessons.exercise1.content.QueryInfo;
-import pro.chenggang.project.javaindividuallessons.exercise1.content.QueryOperatorMetaData;
+import pro.chenggang.project.javaindividuallessons.exercise1.content.QueryInfoMetaData;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author: chenggang
@@ -16,7 +17,7 @@ import java.util.List;
 public class TransferCalculationAnswer implements TransferCalculation {
 
     @Override
-    public List<QueryOperatorMetaData> transfer(List<QueryInfo> queryInfoList) {
-        return Collections.emptyList();
+    public Map<String,Map<String,List<QueryInfoMetaData>>> transfer(List<QueryInfo> queryInfoList) {
+        return Collections.emptyMap();
     }
 }
