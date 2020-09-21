@@ -30,6 +30,8 @@ public interface TransferCalculation {
      * 1.有displaySort的按照displaySort排序
      * 2.operator的排序需要按照查询出来的顺序显示，即查询出来的逗号分割字符串的顺序
      *
+     * GroupName不存在时，使用  "默认"  字符串
+     *
      * @param queryInfoList
      * @return
      */
