@@ -7,13 +7,8 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class QueryOperatorMetaData implements Cloneable {
+public class QueryOperatorMetaData {
 
     private QueryOperator queryOperator;
     private Boolean defaultFlag = Boolean.FALSE;
-
-    @Override
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
 }
