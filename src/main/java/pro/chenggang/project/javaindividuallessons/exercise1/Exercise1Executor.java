@@ -15,7 +15,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 /**
  * @author: chenggang
@@ -34,7 +33,7 @@ public class Exercise1Executor implements ExerciseExecutor {
          * query_name  |  query_code  |  query_operator  |  query_limit_operator  |  function_type  |  display_sort  |  group_name
          */
         Resource resource = new ClassPathResource("exercise1/data.json");
-        String dataJson = Files.readAllLines(Paths.get(resource.getURI())).stream().collect(Collectors.joining());
+        String dataJson = String.join("", Files.readAllLines(Paths.get(resource.getURI())));
         List<QueryInfo> queryInfoList = JSON.parseArray(dataJson, QueryInfo.class);
         Map<String, Map<String, List<QueryInfoMetaData>>> transferResult = transferCalculation.transfer(queryInfoList);
         System.out.println(JSON.toJSONString(transferResult, SerializerFeature.PrettyFormat));

@@ -14,6 +14,9 @@ public interface TransferCalculation {
 
     /**
      * List<QueryInfo> 是原始数据
+     * 查询出来的结果结构
+     * query_name  |  query_code  |  query_operator  |  query_limit_operator  |  function_type  |  display_sort  |  group_name
+     *
      * 目标数据结构为
      *
      * {
@@ -22,10 +25,9 @@ public interface TransferCalculation {
      *              QueryInfoMetaData对象
      *         ]
      *     }
-     *
      * }
      *
-     * 其中 QueryOperatorMetaData 对象中defaultFlag 字段，  仅标记OperatorMetaDataList中的第一个
+     * 其中 QueryOperatorMetaData 对象中defaultFlag 字段，仅标记OperatorMetaDataList中的第一个
      *
      * 排序：
      * 1.有displaySort的按照displaySort排序
@@ -35,6 +37,7 @@ public interface TransferCalculation {
      *
      * functionType 为1 时，表示  查询功能
      * functionType 为2 时，表示  分组功能
+     *
      *
      * @param queryInfoList
      * @return

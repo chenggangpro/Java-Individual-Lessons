@@ -119,6 +119,7 @@ public enum QueryOperator {
      * 包含所有
      */
     FIND_ALL_HAVE,
+
     ;
 
 }
