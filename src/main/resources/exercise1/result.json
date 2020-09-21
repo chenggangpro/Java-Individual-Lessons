@@ -1,0 +1,1670 @@
+{
+  "查询功能": {
+    "main_sa_name": [
+      {
+        "queryCode": "main_sa_name",
+        "queryName": "上次接待服务顾问",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "SELECT"
+          }
+        ]
+      }
+    ],
+    "car_age": [
+      {
+        "queryCode": "car_age",
+        "queryName": "车龄",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          }
+        ]
+      },
+      {
+        "queryCode": "car_age",
+        "queryName": "车龄",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          }
+        ]
+      },
+      {
+        "queryCode": "car_age",
+        "queryName": "车龄",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          }
+        ]
+      }
+    ],
+    "main_plate_id": [
+      {
+        "queryCode": "main_plate_id",
+        "queryName": "车牌号",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_plate_id",
+        "queryName": "车牌号",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_plate_id",
+        "queryName": "车牌号",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "EQUAL"
+          }
+        ]
+      }
+    ],
+    "main_car_id": [
+      {
+        "queryCode": "main_car_id",
+        "queryName": "底盘号",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_car_id",
+        "queryName": "底盘号",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_car_id",
+        "queryName": "底盘号",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "EQUAL"
+          }
+        ]
+      }
+    ]
+  },
+  "分组功能": {
+    "recency_accident": [
+      {
+        "queryCode": "recency_accident",
+        "queryName": "最后一次事故维修时间间隔",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "recency_accident",
+        "queryName": "最后一次事故维修时间间隔",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "recency_accident",
+        "queryName": "最后一次事故维修时间间隔",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      }
+    ],
+    "main_repair_type_secondary_category": [
+      {
+        "queryCode": "main_repair_type_secondary_category",
+        "queryName": "维修类别",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "IN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "ONLY_HAVE"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "ALL_HAVE"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_repair_type_secondary_category",
+        "queryName": "维修类别",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "IN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "ONLY_HAVE"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "ALL_HAVE"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_repair_type_secondary_category",
+        "queryName": "维修类别",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "IN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "ONLY_HAVE"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "ALL_HAVE"
+          }
+        ]
+      }
+    ],
+    "part_last_time": [
+      {
+        "queryCode": "part_last_time",
+        "queryName": "配件最后更换时间",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "ABSOLUTE_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_CURRENT_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_FIX_TIME"
+          }
+        ]
+      },
+      {
+        "queryCode": "part_last_time",
+        "queryName": "配件最后更换时间",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "ABSOLUTE_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_CURRENT_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_FIX_TIME"
+          }
+        ]
+      },
+      {
+        "queryCode": "part_last_time",
+        "queryName": "配件最后更换时间",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "ABSOLUTE_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_CURRENT_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_FIX_TIME"
+          }
+        ]
+      }
+    ],
+    "return_decile": [
+      {
+        "queryCode": "return_decile",
+        "queryName": "进站概率TOP分位",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "SELECT"
+          }
+        ]
+      },
+      {
+        "queryCode": "return_decile",
+        "queryName": "进站概率TOP分位",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "SELECT"
+          }
+        ]
+      },
+      {
+        "queryCode": "return_decile",
+        "queryName": "进站概率TOP分位",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "SELECT"
+          }
+        ]
+      }
+    ],
+    "freq_phone_last1month": [
+      {
+        "queryCode": "freq_phone_last1month",
+        "queryName": "上月电话邀约接通次数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "freq_phone_last1month",
+        "queryName": "上月电话邀约接通次数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "freq_phone_last1month",
+        "queryName": "上月电话邀约接通次数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      }
+    ],
+    "part_duration_gap": [
+      {
+        "queryCode": "part_duration_gap",
+        "queryName": "配件最后更换时长间隔",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      }
+    ],
+    "mileage_daily_avg_forecast": [
+      {
+        "queryCode": "mileage_daily_avg_forecast",
+        "queryName": "预测日均里程",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "mileage_daily_avg_forecast",
+        "queryName": "预测日均里程",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "mileage_daily_avg_forecast",
+        "queryName": "预测日均里程",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      }
+    ],
+    "frequency_last1year": [
+      {
+        "queryCode": "frequency_last1year",
+        "queryName": "最近1年进站次数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      }
+    ],
+    "main_settle_date": [
+      {
+        "queryCode": "main_settle_date",
+        "queryName": "结算日期",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "ABSOLUTE_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_CURRENT_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_FIX_TIME"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_settle_date",
+        "queryName": "结算日期",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "ABSOLUTE_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_CURRENT_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_FIX_TIME"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_settle_date",
+        "queryName": "结算日期",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "ABSOLUTE_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_CURRENT_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_FIX_TIME"
+          }
+        ]
+      }
+    ],
+    "churn_decile": [
+      {
+        "queryCode": "churn_decile",
+        "queryName": "流失概率TOP分位",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "SELECT"
+          }
+        ]
+      }
+    ],
+    "freq_sms_last1month": [
+      {
+        "queryCode": "freq_sms_last1month",
+        "queryName": "上月短信邀约次数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "freq_sms_last1month",
+        "queryName": "上月短信邀约次数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "freq_sms_last1month",
+        "queryName": "上月短信邀约次数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      }
+    ],
+    "recency": [
+      {
+        "queryCode": "recency",
+        "queryName": "未进站天数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "recency",
+        "queryName": "未进站天数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "recency",
+        "queryName": "未进站天数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      }
+    ],
+    "part_freq_last3years": [
+      {
+        "queryCode": "part_freq_last3years",
+        "queryName": "最近3年配件更换次数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "part_freq_last3years",
+        "queryName": "最近3年配件更换次数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "part_freq_last3years",
+        "queryName": "最近3年配件更换次数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      }
+    ],
+    "mileage_forecast": [
+      {
+        "queryCode": "mileage_forecast",
+        "queryName": "预测里程",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "mileage_forecast",
+        "queryName": "预测里程",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "mileage_forecast",
+        "queryName": "预测里程",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      }
+    ],
+    "main_purchase_date": [
+      {
+        "queryCode": "main_purchase_date",
+        "queryName": "购车日期",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "ABSOLUTE_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_CURRENT_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_FIX_TIME"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_purchase_date",
+        "queryName": "购车日期",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "ABSOLUTE_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_CURRENT_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_FIX_TIME"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_purchase_date",
+        "queryName": "购车日期",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "ABSOLUTE_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_CURRENT_TIME"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "RELATIVE_FIX_TIME"
+          }
+        ]
+      }
+    ],
+    "order_part_category": [
+      {
+        "queryCode": "order_part_category",
+        "queryName": "配件分类",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "IN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "ONLY_HAVE"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "ALL_HAVE"
+          }
+        ]
+      }
+    ],
+    "campaign_lists_last1month": [
+      {
+        "queryCode": "campaign_lists_last1month",
+        "queryName": "上月参加邀约活动列表",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "FIND_IN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "FIND_ONLY_HAVE"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "FIND_ALL_HAVE"
+          }
+        ]
+      },
+      {
+        "queryCode": "campaign_lists_last1month",
+        "queryName": "上月参加邀约活动列表",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "FIND_IN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "FIND_ONLY_HAVE"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "FIND_ALL_HAVE"
+          }
+        ]
+      },
+      {
+        "queryCode": "campaign_lists_last1month",
+        "queryName": "上月参加邀约活动列表",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "FIND_IN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "FIND_ONLY_HAVE"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "FIND_ALL_HAVE"
+          }
+        ]
+      }
+    ],
+    "main_total_fee": [
+      {
+        "queryCode": "main_total_fee",
+        "queryName": "总金额",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_total_fee",
+        "queryName": "总金额",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_total_fee",
+        "queryName": "总金额",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      }
+    ],
+    "recency_maint": [
+      {
+        "queryCode": "recency_maint",
+        "queryName": "未保养天数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "recency_maint",
+        "queryName": "未保养天数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "recency_maint",
+        "queryName": "未保养天数",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      }
+    ],
+    "drive_distance": [
+      {
+        "queryCode": "drive_distance",
+        "queryName": "距离4S店行驶距离",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      }
+    ],
+    "part_monetary_last3years": [
+      {
+        "queryCode": "part_monetary_last3years",
+        "queryName": "最近3年配件更换总金额",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "part_monetary_last3years",
+        "queryName": "最近3年配件更换总金额",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "part_monetary_last3years",
+        "queryName": "最近3年配件更换总金额",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "BETWEEN"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "NOT_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "LESS_OR_EQUAL"
+          },
+          {
+            "defaultFlag": false,
+            "queryOperator": "GREATER_OR_EQUAL"
+          }
+        ]
+      }
+    ],
+    "main_plate_id": [
+      {
+        "queryCode": "main_plate_id",
+        "queryName": "车牌号",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_plate_id",
+        "queryName": "车牌号",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_plate_id",
+        "queryName": "车牌号",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "EQUAL"
+          }
+        ]
+      }
+    ],
+    "main_car_id": [
+      {
+        "queryCode": "main_car_id",
+        "queryName": "底盘号",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_car_id",
+        "queryName": "底盘号",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "EQUAL"
+          }
+        ]
+      },
+      {
+        "queryCode": "main_car_id",
+        "queryName": "底盘号",
+        "queryOperatorMetaDataList": [
+          {
+            "defaultFlag": true,
+            "queryOperator": "EQUAL"
+          }
+        ]
+      }
+    ]
+  }
+}
