@@ -16,13 +16,29 @@ public interface TransferCalculation {
      * List<QueryInfo> 是原始数据
      * 查询出来的结果结构
      * query_name  |  query_code  |  query_operator  |  query_limit_operator  |  function_type  |  display_sort  |  group_name
-     *
+     * public class QueryInfo {
+     *     private String groupName;
+     *     private String queryName;
+     *     private String queryCode;
+     *     private String queryLimitOperator;
+     *     private String queryOperator;
+     *     private Integer functionType;
+     *     private Double displaySort;
+     * }
      * 目标数据结构为
-     *
      * {
      *     "functionType的值": {
      *         "groupName的值": [
-     *              QueryInfoMetaData对象
+     *               {
+     *                  queryCode
+     *                  queryName
+     *                  queryOperatorMetaDataList:[
+     *                          {
+     *                              defaultFlag:
+     *                              queryOperator:
+     *                          }
+     *                  ]
+     *              }
      *         ]
      *     }
      * }
