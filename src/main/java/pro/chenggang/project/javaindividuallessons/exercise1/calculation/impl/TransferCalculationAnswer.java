@@ -35,7 +35,14 @@ public class TransferCalculationAnswer implements TransferCalculation {
     @Override
     public Map<String, Map<String, List<QueryInfoMetaData>>> transfer(List<QueryInfo> queryInfoList) {
         return queryInfoList.stream()
-                .collect(Collectors.groupingBy(queryInfo -> queryInfo.getFunctionType().toString()))
+                .collect(Collectors.groupingBy(queryInfo -> {
+                    // GroupName不存在时，使用  "默认"  字符串
+                    if (Exercise1Constant.FunctionTypeEnum.SELECT.functionTypeCode.equals(queryInfo.getFunctionType())) {
+                        return Exercise1Constant.FunctionTypeEnum.SELECT.functionTypeName;
+                    } else {
+                        return Exercise1Constant.FunctionTypeEnum.GROUP.functionTypeName;
+                    }
+                }))
                 .entrySet()
                 .stream()
                 .collect(Collectors.toMap(
