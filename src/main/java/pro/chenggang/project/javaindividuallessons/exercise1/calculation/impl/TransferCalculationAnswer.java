@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
  */
 @Slf4j
 public class TransferCalculationAnswer implements TransferCalculation {
-    /*
+    /**
      * 查询出来的结果结构
      * query_name  |  query_code  |  query_operator  |  query_limit_operator  |  function_type  |  display_sort  |  group_name
      * 目标数据结构为
