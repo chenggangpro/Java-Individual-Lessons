@@ -33,8 +33,9 @@ public class Exercise2Executor implements ExerciseExecutor {
         String[] data = IntStream.range(0, RandomUtils.nextInt(10, 20)).mapToObj(item -> RandomStringUtils.randomAlphanumeric(4)).toArray(String[]::new);
         System.out.println("-----For Each With Stream :");
         calculation.forEachWithStream(data);
-        String targetItem = calculation.getTargetItem(data, RandomUtils.nextInt(0, data.length));
-        System.out.println("-----Get Target Item Data :");
+        int index = RandomUtils.nextInt(0, data.length);
+        String targetItem = calculation.getTargetItem(data, index);
+        System.out.println("-----Get Target Item Data ,Index : "+index+" Data :");
         System.out.println(targetItem);
         int[] generateStepData = calculation.generateStepData(RandomUtils.nextInt(0, 10), RandomUtils.nextInt(1, 10), RandomUtils.nextInt(5, 20));
         System.out.println("-----Generate Step Data :");
