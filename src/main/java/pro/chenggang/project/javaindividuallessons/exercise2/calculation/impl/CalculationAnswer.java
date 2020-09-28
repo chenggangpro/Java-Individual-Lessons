@@ -23,8 +23,8 @@ public class CalculationAnswer implements Calculation {
     }
 
     @Override
-    public int[] generateStepData(int start, int step, int totalCount) {
-        return new int[0];
+    public Integer[] generateStepData(int start, int step, int totalCount) {
+        return new Integer[0];
     }
 
     @Override
