@@ -37,7 +37,7 @@ public interface Calculation {
     Integer[] generateStepData(int start,int step,int totalCount);
 
     /**
-     * 1. QueryInfo中的 queryOperator 字段，将逗号分割后的数据按照字典 排序
+     * 1. QueryInfo中的 queryOperator 字段，将逗号分割后的数据按照字典 排序 去重
      * 2. step1 排序后的字段重新用逗号拼接,
      * 3. 按照step2中重新拼接后的值，去重，得到Set<QueryInfo>集合
      * @param queryInfoList
