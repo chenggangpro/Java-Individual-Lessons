@@ -6,7 +6,9 @@ import pro.chenggang.project.javaindividuallessons.exercise1.content.QueryInfo;
 import pro.chenggang.project.javaindividuallessons.exercise2.calculation.Calculation;
 
 import java.util.Comparator;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
@@ -90,6 +92,34 @@ public class CalculationAnswerDemo implements Calculation {
                         .sorted(Comparator.naturalOrder())
                         .collect(Collectors.joining(","))))
                 .collect(Collectors.toSet());
+    }
+
+    /**
+     * 1. QueryInfo中的 queryOperator 字段，将逗号分割后的数据按照字典 去重 排序
+     * 2. step1 排序后的字段重新用逗号拼接,
+     * 3. 生成 按照step2中重新拼接后的值，作为key，List<QueryInfo> 作为Value 的Map，
+     * 并按照 value对象中的第一个QueryInfo 中的sort 将结果Map排序
+     *
+     * @param queryInfoList
+     * @return
+     */
+    @Override
+    public Map<String, List<QueryInfo>> distinctFunction2(List<QueryInfo> queryInfoList) {
+        return queryInfoList.stream()
+                .collect(Collectors.groupingBy(item-> Stream.of(StringUtils.split(item.getQueryOperator(),","))
+                        .distinct()
+                        .sorted(Comparator.naturalOrder())
+                        .collect(Collectors.joining(",")))
+                )
+                .entrySet()
+                .stream()
+                .sorted(Comparator.comparing(o -> o.getValue().stream().findFirst().get().getDisplaySort()))
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (o1,o2)->o1,
+                        LinkedHashMap::new
+                ));
     }
 
     private static <T> Predicate<T> distinctByKey(Function<? super T, Object> keyExtractor) {

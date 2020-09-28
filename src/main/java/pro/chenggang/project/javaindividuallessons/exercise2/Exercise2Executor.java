@@ -15,6 +15,7 @@ import pro.chenggang.project.javaindividuallessons.exercise2.calculation.Calcula
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.stream.IntStream;
 
@@ -44,7 +45,10 @@ public class Exercise2Executor implements ExerciseExecutor {
         String dataJson = String.join("", Files.readAllLines(Paths.get(resource.getURI())));
         List<QueryInfo> queryInfoList = JSON.parseArray(dataJson, QueryInfo.class);
         Set<QueryInfo> distinctFunctionResult = calculation.distinctFunction(queryInfoList);
-        System.out.println("-----Distinct Data :");
+        System.out.println("-----Distinct Function Result Data :");
         System.out.println(JSON.toJSONString(distinctFunctionResult, SerializerFeature.PrettyFormat));
+        Map<String, List<QueryInfo>> distinctFunction2Result = calculation.distinctFunction2(queryInfoList);
+        System.out.println("-----Distinct Function 2 Result Data :");
+        System.out.println(JSON.toJSONString(distinctFunction2Result, SerializerFeature.PrettyFormat));
     }
 }

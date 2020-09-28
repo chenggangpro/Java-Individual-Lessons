@@ -4,6 +4,7 @@ import pro.chenggang.project.javaindividuallessons.exercise1.content.QueryInfo;
 import pro.chenggang.project.javaindividuallessons.exercise2.calculation.Calculation;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -59,6 +60,20 @@ public class CalculationAnswer implements Calculation {
      */
     @Override
     public Set<QueryInfo> distinctFunction(List<QueryInfo> queryInfoList) {
+        return null;
+    }
+
+    /**
+     * 1. QueryInfo中的 queryOperator 字段，将逗号分割后的数据按照字典 去重 排序
+     * 2. step1 排序后的字段重新用逗号拼接,
+     * 3. 生成 按照step2中重新拼接后的值，作为key，List<QueryInfo> 作为Value 的Map，
+     * 并按照 value对象中的第一个QueryInfo 中的sort 将结果Map排序
+     *
+     * @param queryInfoList
+     * @return
+     */
+    @Override
+    public Map<String, List<QueryInfo>> distinctFunction2(List<QueryInfo> queryInfoList) {
         return null;
     }
 }
