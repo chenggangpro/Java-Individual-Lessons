@@ -98,7 +98,7 @@ public class CalculationAnswerDemo implements Calculation {
      * 1. QueryInfo中的 queryOperator 字段，将逗号分割后的数据按照字典 去重 排序
      * 2. step1 排序后的字段重新用逗号拼接,
      * 3. 生成 按照step2中重新拼接后的值，作为key，List<QueryInfo> 作为Value 的Map，
-     * 并按照 value对象中的第一个QueryInfo 中的sort 将结果Map排序
+     * 4. Value 中需要按照displaySort排序，key按照首字母字典顺序的倒序排序
      *
      * @param queryInfoList
      * @return
@@ -113,10 +113,10 @@ public class CalculationAnswerDemo implements Calculation {
                 )
                 .entrySet()
                 .stream()
-                .sorted(Comparator.comparing(o -> o.getValue().stream().findFirst().get().getDisplaySort()))
+                .sorted(Comparator.comparing(o -> StringUtils.substring(((Map.Entry<String,List<QueryInfo>>)o).getKey(), 0, 1)).reversed())
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,
-                        Map.Entry::getValue,
+                        entry->entry.getValue().stream().sorted(Comparator.comparing(QueryInfo::getDisplaySort)).collect(Collectors.toList()),
                         (o1,o2)->o1,
                         LinkedHashMap::new
                 ));
