@@ -1,11 +1,16 @@
 package pro.chenggang.project.javaindividuallessons.exercise2.calculation.impl;
 
 import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.StringUtils;
 import pro.chenggang.project.javaindividuallessons.exercise1.content.QueryInfo;
 import pro.chenggang.project.javaindividuallessons.exercise2.calculation.Calculation;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -71,7 +76,7 @@ public class CalculationAnswerDemo implements Calculation {
     }
 
     /**
-     * 1. QueryInfo中的 queryOperator 字段，将逗号分割后的数据按照字典 排序 去重
+     * 1. QueryInfo中的 queryOperator 字段，将逗号分割后的数据按照字典 去重 排序
      * 2. step1 排序后的字段重新用逗号拼接,
      * 3. 按照step2中重新拼接后的值，去重，得到Set<QueryInfo>集合
      * @param queryInfoList
@@ -79,6 +84,16 @@ public class CalculationAnswerDemo implements Calculation {
      */
     @Override
     public Set<QueryInfo> distinctFunction(List<QueryInfo> queryInfoList) {
-        return null;
+        return queryInfoList.stream()
+                .filter(distinctByKey(item-> Stream.of(StringUtils.split(item.getQueryOperator(),","))
+                        .distinct()
+                        .sorted(Comparator.naturalOrder())
+                        .collect(Collectors.joining(","))))
+                .collect(Collectors.toSet());
+    }
+
+    private static <T> Predicate<T> distinctByKey(Function<? super T, Object> keyExtractor) {
+        Set<Object> seen = ConcurrentHashMap.newKeySet();
+        return t -> seen.add(keyExtractor.apply(t));
     }
 }
