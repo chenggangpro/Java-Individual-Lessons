@@ -34,7 +34,7 @@ public interface Calculation {
      * 例如，start = 1 , step = 3 ,totalCount = 3
      * return  [1,4,7]
      */
-    int[] generateStepData(int start,int step,int totalCount);
+    Integer[] generateStepData(int start,int step,int totalCount);
 
     /**
      * 1. QueryInfo中的 queryOperator 字段，将逗号分割后的数据按照字典 排序
