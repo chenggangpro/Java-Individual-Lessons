@@ -73,8 +73,7 @@ public class CalculationAnswerDemo implements Calculation {
     public Integer[] generateStepData(int start, int step, int totalCount) {
         return Stream.iterate(start, item->item+=step)
                 .limit(totalCount)
-                .collect(Collectors.toList())
-                .toArray(new Integer[]{});
+                .toArray(Integer[]::new);
     }
 
     /**
