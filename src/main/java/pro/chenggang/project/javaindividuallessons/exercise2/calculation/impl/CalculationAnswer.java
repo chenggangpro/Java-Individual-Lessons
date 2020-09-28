@@ -50,7 +50,7 @@ public class CalculationAnswer implements Calculation {
     }
 
     /**
-     * 1. QueryInfo中的 queryOperator 字段，将逗号分割后的数据按照字典 排序 去重
+     * 1. QueryInfo中的 queryOperator 字段，将逗号分割后的数据按照字典 去重 排序
      * 2. step1 排序后的字段重新用逗号拼接,
      * 3. 按照step2中重新拼接后的值，去重，得到Set<QueryInfo>集合
      *
