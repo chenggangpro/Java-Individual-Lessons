@@ -1,16 +1,17 @@
 package pro.chenggang.project.javaindividuallessons.exercise2.calculation.impl;
 
-import com.google.common.collect.Lists;
-import org.apache.commons.lang3.StringUtils;
 import pro.chenggang.project.javaindividuallessons.exercise1.content.QueryInfo;
 import pro.chenggang.project.javaindividuallessons.exercise2.calculation.Calculation;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 /**
  * @author: chenggang
  * @date 2020-09-24.
+ * @author: cuitao
+ * @date 2020-09-30.
  */
 public class CalculationAnswer implements Calculation {
 
@@ -22,18 +23,25 @@ public class CalculationAnswer implements Calculation {
      */
     @Override
     public void forEachWithStream(String[] dataList) {
+        // 先创建一个数组下标的int有限流，在通过无限流遍历
+        IntStream.range(0, dataList.length)
+                .forEach(item -> System.out.println(dataList[item]));
     }
 
     /**
      * 使用Stream获取指定序列的数据
      *
      * @param dataList 数据
-     * @param index
-     * @return
+     * @param index    指定的下标
+     * @return 目标数据
      */
     @Override
     public String getTargetItem(String[] dataList, int index) {
-        return null;
+        return IntStream.range(index, index + 1)
+                .boxed()
+                .findAny()
+                .map(item -> dataList[item])
+                .orElse("NULL");
     }
 
     /**
@@ -47,7 +55,12 @@ public class CalculationAnswer implements Calculation {
      */
     @Override
     public Integer[] generateStepData(int start, int step, int totalCount) {
-        return new Integer[0];
+        return IntStream.range(start, start + step * totalCount)
+                .filter(item -> item % step == 0 || item == start)
+                .limit(totalCount)
+                .boxed()
+                .collect(Collectors.toList())
+                .toArray(new Integer[]{});
     }
 
     /**

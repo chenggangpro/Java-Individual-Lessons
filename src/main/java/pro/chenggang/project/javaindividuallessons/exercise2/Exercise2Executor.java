@@ -36,9 +36,13 @@ public class Exercise2Executor implements ExerciseExecutor {
         calculation.forEachWithStream(data);
         int index = RandomUtils.nextInt(0, data.length);
         String targetItem = calculation.getTargetItem(data, index);
-        System.out.println("-----Get Target Item Data ,Index : "+index+" Data :");
+        System.out.println("-----Get Target Item Data ,Index : " + index + " Data :");
         System.out.println(targetItem);
-        Integer[] generateStepData = calculation.generateStepData(RandomUtils.nextInt(0, 10), RandomUtils.nextInt(1, 10), RandomUtils.nextInt(5, 20));
+        int start = RandomUtils.nextInt(0, 10);
+        int step = RandomUtils.nextInt(1, 10);
+        int totalCount = RandomUtils.nextInt(5, 20);
+        System.out.println(String.format("start is %s,step is %s,totalCount is %s", start + "", step + "", totalCount + ""));
+        Integer[] generateStepData = calculation.generateStepData(start, step, totalCount);
         System.out.println("-----Generate Step Data :");
         System.out.println(JSON.toJSONString(generateStepData, SerializerFeature.PrettyFormat));
         Resource resource = new ClassPathResource("exercise1/data.json");
