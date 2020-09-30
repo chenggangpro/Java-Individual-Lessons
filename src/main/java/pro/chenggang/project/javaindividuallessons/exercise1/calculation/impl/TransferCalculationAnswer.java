@@ -13,8 +13,6 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * @author: chenggang
- * @date 2020-09-21.
  * @author: zhangwufei
  * @data 2020-09-23.
  */
@@ -49,13 +47,14 @@ public class TransferCalculationAnswer implements TransferCalculation {
                         Map.Entry::getKey,
                         entry -> entry.getValue().stream()
                                 .collect(Collectors.groupingBy(queryInfo -> {
-                                    // GroupName不存在时，使用  "默认"  字符串
-                                    if (StringUtils.isEmpty(queryInfo.getGroupName())) {
-                                        return Exercise1Constant.DEFAULT_GROUP_NAME;
-                                    } else {
-                                        return queryInfo.getGroupName();
-                                    }
-                                }))
+                                            // GroupName不存在时，使用  "默认"  字符串
+                                            if (StringUtils.isEmpty(queryInfo.getGroupName())) {
+                                                return Exercise1Constant.DEFAULT_GROUP_NAME;
+                                            } else {
+                                                return queryInfo.getGroupName();
+                                            }
+                                        })
+                                )
                 ))
                 .entrySet()
                 .stream()
@@ -91,7 +90,9 @@ public class TransferCalculationAnswer implements TransferCalculation {
                                                     queryInfoMetaData.setQueryOperatorMetaDataList(queryOperatorMetaDataList);
                                                     return queryInfoMetaData;
                                                 }).collect(Collectors.toList())
-                                )))
+                                        )
+                                )
+                        )
                 );
     }
 }
